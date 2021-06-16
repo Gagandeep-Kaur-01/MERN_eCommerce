@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap'
 import Header from './components/Header';
+import HomeScreen from './screens/HomeScreen'
 import Footer from './components/Footer';
 
 const App = () => {
@@ -11,7 +12,9 @@ const App = () => {
 
       <main className='py-5'>
         <Container>
-          <h1>Welcome to eCommerce_Shopping Application</h1>
+          <h1>
+            <HomeScreen />
+          </h1>
         </Container>        
       </main>
 
