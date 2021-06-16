@@ -11,7 +11,7 @@ const App = () => {
 
       <main className='py-5'>
         <Container>
-          <h1>Welcome to eCommerce Shopping Application</h1>
+          <h1>Welcome to eCommerce_Shopping Application</h1>
         </Container>        
       </main>
 
