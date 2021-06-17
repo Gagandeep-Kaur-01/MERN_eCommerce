@@ -15,9 +15,7 @@ const App = () => {
 
       <main className='py-5'>
         <Container>
-          <h1>
-            <HomeScreen />
-          </h1>
+          <Route path='/' component={ HomeScreen } />
         </Container>        
       </main>
 
