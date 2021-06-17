@@ -7,7 +7,9 @@ import Footer from './components/Footer';
 
 const App = () => {
   return (
-    <>
+
+
+    <Router>
 
       <Header />
 
@@ -21,7 +23,7 @@ const App = () => {
 
       <Footer />      
 
-    </>
+    </Router>
   );
 }
 
