@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Gagandeep-Kaur-01/MERN_eCommerce/issues"
   },
-  "homepage": "https://github.com/Gagandeep-Kaur-01/MERN_eCommerce#readme"
+  "homepage": "https://github.com/Gagandeep-Kaur-01/MERN_eCommerce#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
