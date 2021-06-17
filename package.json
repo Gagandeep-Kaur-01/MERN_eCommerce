@@ -1,0 +1,19 @@
+{
+  "name": "mern_ecommerce",
+  "version": "1.0.0",
+  "description": "MERN Shopping cart app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gagandeep-Kaur-01/MERN_eCommerce.git"
+  },
+  "author": "Gagandeep Kaur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gagandeep-Kaur-01/MERN_eCommerce/issues"
+  },
+  "homepage": "https://github.com/Gagandeep-Kaur-01/MERN_eCommerce#readme"
+}
