@@ -20,7 +20,7 @@ const ProductScreen = ({ match }) => {
       fetchProduct()
       
       // console.log(data)
-    }, [])
+    }, [match])
   
     return (
       <>
