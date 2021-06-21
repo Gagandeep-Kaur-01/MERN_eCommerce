@@ -12,6 +12,12 @@ connectDB()
 
 const app = express()
 
+app.use((req, res, next) => {
+    console.log(req.originalUrl)
+    next()
+})
+
+
 app.get('/', (req,res) => {
     res.send('API is running.....')
 })
