@@ -1,4 +1,4 @@
-import React, { useEffect }  from 'react'
+import React, { useState, useEffect }  from 'react'
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { Row, Col, Image, ListGroup, Card, Button } from 'react-bootstrap'
@@ -11,6 +11,7 @@ import { listProductDetails } from '../actions/productActions'
 
 
 const ProductScreen = ({ match }) => {
+  const [qty, setQty] = useState(0)
     // const product = products.find((p) => p._id === match.params.id)
     // const [product, setProduct] = useState({})
 
@@ -75,6 +76,20 @@ const ProductScreen = ({ match }) => {
                     </Col>
                   </Row>
                 </ListGroup.Item>
+
+                {product.countInStock > 0 && (
+                  <ListGroup.Item>
+                    <Row>
+                      <Col>Qty</Col>
+                      <Col>
+                      <Form.Control as='select' value={qty} onChange={(e) => setQty(e.target.value)}>
+                        [...Array(product.countInStock).keys()]
+                      </Form.Control>
+                      </Col>
+                    </Row>
+                  </ListGroup.Item>
+                    
+                )}
                 <ListGroup.Item>
                   <Button
                     className='btn-block'
