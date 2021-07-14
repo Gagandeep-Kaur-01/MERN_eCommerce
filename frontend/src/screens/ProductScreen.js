@@ -11,7 +11,7 @@ import { listProductDetails } from '../actions/productActions'
 
 
 const ProductScreen = ({ history, match }) => {
-  const [qty, setQty] = useState(0)
+  const [qty, setQty] = useState(1)
     // const product = products.find((p) => p._id === match.params.id)
     // const [product, setProduct] = useState({})
 
