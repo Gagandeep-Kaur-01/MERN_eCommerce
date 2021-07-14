@@ -10,7 +10,7 @@ import Loader from '../components/Loader'
 import { listProductDetails } from '../actions/productActions'
 
 
-const ProductScreen = ({ match }) => {
+const ProductScreen = ({ history, match }) => {
   const [qty, setQty] = useState(0)
     // const product = products.find((p) => p._id === match.params.id)
     // const [product, setProduct] = useState({})
@@ -28,6 +28,10 @@ const ProductScreen = ({ match }) => {
       // fetchProduct()   
       dispatch(listProductDetails(match.params.id))
     }, [dispatch, match])
+
+    const addToCartHander = () => {
+      history.push(`/cart/${match.params.id}?qty=${qty}`)
+    }
   
 
     // const product = {}
@@ -100,6 +104,7 @@ const ProductScreen = ({ match }) => {
                 )}
                 <ListGroup.Item>
                   <Button
+                    onClick={addToCartHander}
                     className='btn-block'
                     type='button'
                     disabled={product.countInStock === 0}
