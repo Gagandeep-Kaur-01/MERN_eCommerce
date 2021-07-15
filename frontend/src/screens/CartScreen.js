@@ -28,6 +28,11 @@ const CartScreen = ( {match, location, history }) => {
     }
 
 
+    const checkoutHandler = () => {
+        console.log('checkout')
+    }
+
+
     return (
         <Row>
             <Col md={8}>
