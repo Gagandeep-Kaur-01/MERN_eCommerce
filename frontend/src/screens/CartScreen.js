@@ -74,7 +74,7 @@ const CartScreen = ( {match, location, history }) => {
                                             <i className='fas fa-trash'></i>
                                         </Button>
                                     </Col>
-+``                                </Row>
+                                </Row>
                             </ListGroup.Item>
                         ))}
                     </ListGroup>
