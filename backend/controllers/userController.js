@@ -8,7 +8,10 @@ import User from '../models/userModel.js'
 const authUser = asyncHandler(async (req, res) => {
     const { email, password } = req.body
 
-    res.send(email, password)
+    res.send({
+        email,
+        password,
+    })
 })
 
 export { authUser }
