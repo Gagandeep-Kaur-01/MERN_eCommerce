@@ -7,7 +7,7 @@ import loader from '../components/Loader'
 import FormContainer from '../components/FormContainer'
 import { login } from '../actions/userActions'
 
-const LoginScreen = () => {
+const LoginScreen = (location) => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
