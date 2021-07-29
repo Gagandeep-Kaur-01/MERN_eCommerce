@@ -4,6 +4,7 @@ import { Form, Button, Row, Col } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import Message from '../components/Message'
 import loader from '../components/Loader'
+import FormContainer from '../components/FormContainer'
 import { login } from '../actions/userActions'
 
 const LoginScreen = () => {
@@ -11,9 +12,10 @@ const LoginScreen = () => {
     const [password, setPassword] = useState('')
 
     return (
-        <div>
+        <FormContainer>
+            <h1> Sign In </h1>
 
-        </div>
+        </FormContainer>
     )
 }
 
